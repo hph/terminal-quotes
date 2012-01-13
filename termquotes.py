@@ -3,6 +3,7 @@
 
 from random import choice
 
+# NOTE Use ConfigParser to find quote files.
 files = ['icelandic.txt', 'general.txt']
 
 def parse(input_file):
