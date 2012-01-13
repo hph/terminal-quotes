@@ -19,19 +19,19 @@ def parse(input_file):
     for line in file:
         index += 1
         if line[0] == '#':
-            # Comment, ignore the line.
+            # The line contains a comment: ignore it.
             continue
         elif line[0] == '[' and line[-2] == ']':
             # Line contains the name of the author.
             author = line[1:-2]
             continue
         elif line == '&\n' or line == '\n' or index == len:
-            # Ampersand: detect another quote by the same author.
-            # Newline: detect new quote or end of quotes by the same author.
+            # Ampersand and newline: add last quote to temp_quotes.
             temp_quotes.append(''.join(lines))
+            # Re-initialize temp list (lines).
             lines = []
             if line == '\n' or index == len:
-                # Finish adding the quotes to the list.
+                # Finish adding the quotes to the list if last quote or EOF.
                 quotes[author] = temp_quotes
                 temp_quotes = []
             continue
@@ -46,7 +46,10 @@ def main():
     for file in files:
         # Update the quotes dictionary with quotes from the chosen files.
         quotes.update(parse(file))
+    # Choose an author based on the number of quotes by him (more or less the
+    # same probability for all the quotes to appear. NOTE Do it some other way.
     author = choice([key for key in quotes for value in quotes[key]])
+    # Select a quote from the author chosen above.
     quote = choice(quotes[author])
     print '\n%s\n\t~%s\n' % (quote, author)
 
