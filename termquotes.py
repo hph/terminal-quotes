@@ -44,6 +44,7 @@ def main():
     '''Print a randomly selected quote.'''
     quotes = {}
     for file in files:
+        # Update the quotes dictionary with quotes from the chosen files.
         quotes.update(parse(file))
     author = choice([key for key in quotes for value in quotes[key]])
     quote = choice(quotes[author])
