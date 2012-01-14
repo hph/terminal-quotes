@@ -1,10 +1,13 @@
 #!/us/bin/env python
 #coding=cp861
 
+import os
+import sys
 from random import choice
 
 # NOTE Use ConfigParser to find quote files.
-files = ['icelandic.txt', 'general.txt']
+current_dir = os.path.dirname(sys.argv[0])
+files = ['%s/icelandic.txt' % current_dir, '%s/general.txt' % current_dir]
 
 def parse(input_file):
     '''Return quotes from a parsed file.'''
