@@ -6,14 +6,16 @@ Setup
 =====
 Installing manually on Linux
 ----------------------------
-`cd ~`
-`mkdir .termquotes`
-`cd .termquotes`
+    `cd ~`
+    `mkdir .termquotes`
+    `cd .termquotes`
 Now move all the source files to this directory.
-`cd ~`
+    `cd ~`
 Edit your bash settings:
-`vim .bashrc`
-Add a line containing `python /home/USER/.termquotes/termquotes.py`.
+    `vim .bashrc`
+Add a line containing "python /home/USER/.termquotes/termquotes.py", modify
+USER accordingly.
+Now reopen the terminal window. You should see a quote printed.
 
 Adding more quotes
 ------------------
