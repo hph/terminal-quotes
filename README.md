@@ -55,7 +55,7 @@ could also do the following (change `USER` to your username):
 
     $ echo alias tq="python /home/USER/.termquotes/termquotes.py >> ~/.baschrc"
 
-Now you can type tq and press enter to print a quote in the terminal at any
+Now you can type `tq` and press enter to print a quote in the terminal at any
 time.
 
 To do
