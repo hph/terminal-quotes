@@ -48,7 +48,7 @@ the file also has to be empty. You can add comments by having `#` as the first
 character of a line, it will be ignored by the program.
 
 Usage
-=====
+-----
 After installing the program all you have to do is to open a terminal and a
 quote will be printed. If you want to be able to ask for a quote on command you
 could also do the following (change `USER` to your username):
@@ -59,7 +59,7 @@ Now you can type `tq` and press enter to print a quote in the terminal at any
 time.
 
 To do
-=====
+-----
 * Write scrapers for various quote websites.
 * Allow users to automatically add quotes with commands by using scrapers.
 * Clean and expand code where needed.
