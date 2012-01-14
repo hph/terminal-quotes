@@ -12,6 +12,7 @@ VERSION = '1.0'
 PLATFORM = system()
 
 def install():
+    '''Install the program.'''
     if PLATFORM == 'Linux':
         # NOTE Add Mac and/or Windows support later.
         try:
@@ -21,6 +22,7 @@ def install():
             current_dir = os.path.dirname(sys.argv[0])
             if not os.path.exists(setup_dir):
                 os.makedirs(setup_folder)
+            # NOTE Copy instead
             move('%s/termquotes.py' % current_dir, setup_dir)
             move('%s/general.txt' % current_dir, setup_dir)
             move('%s/icelandic.txt' % current_dir, setup_dir)
@@ -30,6 +32,11 @@ def install():
         except:
             # NOTE Write a README.
             print 'Setup failed. Try installing manually (refer to README).'
+
+def uninstall():
+    '''Uninstall the program.'''
+    # NOTE Finish ASAP.
+    pass
 
 def main():
     '''A little error handling. Calls install if the argument "install" is
