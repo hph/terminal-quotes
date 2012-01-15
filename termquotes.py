@@ -7,7 +7,8 @@ from random import choice
 
 # NOTE Use ConfigParser to find quote files.
 current_dir = os.path.dirname(sys.argv[0])
-files = ['%s/icelandic.txt' % current_dir, '%s/general.txt' % current_dir]
+files = ['%s/icelandic.txt' % current_dir, '%s/general.txt' % current_dir,
+         '%s/movies.txt' % current_dir]
 
 def parse(input_file):
     '''Return quotes from a parsed file.'''
@@ -55,7 +56,7 @@ def main():
     author = choice([key for key in quotes for value in quotes[key]])
     # Select a quote from the author chosen above.
     quote = choice(quotes[author])
-    print '\n%s\n\t~%s\n' % (quote, author)
+    print '\n%s\n\t~ %s\n' % (quote, author)
 
 if __name__ == '__main__':
     main()
