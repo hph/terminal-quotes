@@ -1,4 +1,4 @@
-#!/us/bin/env python
+#!/usr/bin/env python
 #coding=cp861
 
 import os
