@@ -19,9 +19,9 @@ Open a terminal and execute the following commands:
     $ mkdir ~/.termquotes
     $ cp *.* ~/.termquotes
 
-Modify `USER` in the following line to your username:
+Modify `$USER` in the following line to your username:
 
-    $ echo python /home/USER/.termquotes/termquotes.py >> ~/.baschrc
+    $ echo python /home/$USER/.termquotes/termquotes.py >> ~/.baschrc
 
 Close the terminal and open it anew. Voilà!
 
@@ -51,11 +51,11 @@ Usage
 -----
 After installing the program all you have to do is to open a terminal and a
 quote will be printed. If you want to be able to ask for a quote on command you
-could also do the following (change `USER` to your username):
+could also do the following (change `$USER` to your username):
 
-    $ echo alias tq="python /home/USER/.termquotes/termquotes.py >> ~/.baschrc"
+    $ echo alias q="python /home/$USER/.termquotes/termquotes.py >> ~/.baschrc"
 
-Now you can type `tq` and press enter to print a quote in the terminal at any
+Now you can type `q` and press enter to print a quote in the terminal at any
 time.
 
 To do
