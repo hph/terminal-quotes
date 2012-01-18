@@ -17,7 +17,7 @@ Open a terminal and execute the following commands:
 
     $ cd ~/Downloads/termquotes # cd to the folder containing the source files.
     $ mkdir ~/.termquotes
-    $ cp *.* ~/.termquotes
+    $ cp -R . ~/.termquotes
 
 Modify `$USER` in the following line to your username:
 
