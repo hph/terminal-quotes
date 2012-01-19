@@ -18,7 +18,7 @@ Open a terminal and execute the following commands:
 
     $ git clone git@github.com:haukurpallh/terminal-quotes.git
     $ mv terminal-quotes ~/.termquotes
-    $ echo python /home/$USER/.termquotes/termquotes.py >> ~/.baschrc
+    $ echo python /home/$USER/.termquotes/termquotes.py >> ~/.bashrc
 
 Close the terminal and open it anew. Voilà!
 
