@@ -26,6 +26,7 @@ def install():
             move('%s/termquotes.py' % current_dir, setup_dir)
             move('%s/general.txt' % current_dir, setup_dir)
             move('%s/icelandic.txt' % current_dir, setup_dir)
+            move('%s/movies.txt' % current_dir, setup_dir)
             with open('%s/.bashrc' % home_dir, 'a') as bashrc:
                 bashrc.write('python %s/termquotes.py\n' % setup_dir)
             print 'The program was succesfully installed. Reopen the terminal.'
