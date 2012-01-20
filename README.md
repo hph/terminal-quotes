@@ -48,7 +48,7 @@ Usage
 -----
 After installing the program all you have to do is to open a terminal and a
 quote will be printed. If you want to be able to ask for a quote on command you
-could also do the following (change `$USER` to your username):
+could also do the following:
 
     $ echo alias q="python /home/$USER/.termquotes/termquotes.py >> ~/.baschrc"
 
