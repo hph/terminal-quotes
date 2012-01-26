@@ -7,15 +7,15 @@ Setup
 ### Installing via the setup file (Linux)
 Open a terminal and execute the following commands:
 
-    git clone git@github.com:haukurpallh/terminal-quotes.git
-    python terminal-quotes/setup.py install
+    $ git clone git://github.com/haukurpallh/terminal-quotes.git
+    $ python terminal-quotes/setup.py install
 
 ### Installing manually (Linux)
 Open a terminal and execute the following commands:
 
-    git clone git@github.com:haukurpallh/terminal-quotes.git
-    mv terminal-quotes ~/.termquotes
-    echo python /home/$USER/.termquotes/termquotes.py >> ~/.bashrc
+    $ git clone git://github.com/haukurpallh/terminal-quotes.git
+    $ mv terminal-quotes ~/.termquotes
+    $ echo python /home/$USER/.termquotes/termquotes.py >> ~/.bashrc
 
 Adding more quotes
 ------------------
@@ -45,7 +45,7 @@ After installing the program all you have to do is to open a terminal and a
 quote will be printed. If you want to be able to ask for a quote on command you
 could also do the following:
 
-    echo alias q="python /home/$USER/.termquotes/termquotes.py >> ~/.baschrc"
+    $ echo alias q="python /home/$USER/.termquotes/termquotes.py >> ~/.baschrc"
 
 Now you can type `q` and press enter to print a quote in the terminal at any
 time.
@@ -55,4 +55,3 @@ To do
 * Write scrapers for various quote websites.
 * Allow users to automatically add quotes with commands by using scrapers.
 * Clean and expand code where needed.
-* Add support for Windows and Mac.
