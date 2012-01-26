@@ -7,9 +7,8 @@ from random import choice
 
 # TODO Use ConfigParser to find quote files instead of this hardcoded crap.
 current_dir = os.path.dirname(sys.argv[0])
-#files = ['%s/icelandic.txt' % current_dir, '%s/general.txt' % current_dir,
-#         '%s/movies.txt' % current_dir]
-files = ['%s/icelandic.txt' % current_dir]
+files = ['%s/icelandic.txt' % current_dir, '%s/general.txt' % current_dir,
+         '%s/movies.txt' % current_dir]
 
 file_len = lambda file: sum(1 for _ in open(file))
 
