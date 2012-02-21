@@ -55,4 +55,4 @@ To do
 * Write scrapers for various quote websites.
 * Allow users to automatically add quotes with commands by using scrapers.
 * Clean and expand code where needed.
-* Improve code so that quotes with empty lines can be added
+* Improve code so that quotes with empty lines can be added.
