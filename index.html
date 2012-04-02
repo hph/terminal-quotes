@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Terminal Quotes by haukurpallh</title>
+    
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Terminal Quotes</h1>
+        <p>This program was written as a replacement for Linux Mint's &quot;Fortune Cookies&quot;. It prints a quote every time the terminal is opened. More quotes can easily be added.</p>
+        <p class="view"><a href="https://github.com/haukurpallh/terminal-quotes">View the Project on GitHub <small>haukurpallh/terminal-quotes</small></a></p>
+        <ul>
+          <li><a href="https://github.com/haukurpallh/terminal-quotes/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/haukurpallh/terminal-quotes/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/haukurpallh/terminal-quotes">Fork On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h2>Setup</h2>
+
+<h3>Manual install (Linux)</h3>
+
+<p>Execute the following commands (just copy and paste):</p>
+
+<pre><code>git clone git://github.com/haukurpallh/terminal-quotes.git
+mv terminal-quotes ~/.termquotes
+echo python /home/$USER/.termquotes/termquotes.py &gt;&gt; ~/.bashrc
+</code></pre>
+
+<h2>Adding more quotes</h2>
+
+<p>The procedure to add quotes is fairly simple. For example, open <code>general.txt</code>
+and enter the following lines:</p>
+
+<pre><code>[William Shakespeare]
+To be or not to be: that is the question.
+</code></pre>
+
+<p>There can be no empty lines between the line containing the name of the author
+and the quotes and there has to be an empty line between an author's last quote
+and the next author's header ([William Shakespeare] in this case). Also, the
+last line of the file has to be empty. Different quotes from the same author
+are separated with <code>&amp;</code> as in the following example:</p>
+
+<pre><code>[William Shakespeare]
+Even you, Brutus?
+&amp;
+To be or not to be: that is the question.
+</code></pre>
+
+<h2>Usage</h2>
+
+<p>Every time you open a new terminal the program will print a quote. If you
+also want to be able to print a quote whenever you want, execute the following
+command:</p>
+
+<pre><code>echo alias q="python /home/$USER/.termquotes/termquotes.py &gt;&gt; ~/.baschrc"
+</code></pre>
+
+<p>Now enter the <code>q</code> command to get a random quote.</p>
+
+<h2>Coming soon</h2>
+
+<ul>
+<li>Download quotes from various sites with one command.</li>
+<li>Improve code so that quotes with empty lines can be added.</li>
+<li>Layout settings and color.</li>
+<li>Automatic version checker.</li>
+</ul>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/haukurpallh">haukurpallh</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+  </body>
+</html>
